@@ -18,6 +18,14 @@
     width: 50%;
 }
 
+nav {
+    font-size: 25px;
+    margin-top: -35px;
+    background-color: black;
+    margin-left: -10px;
+    margin-right: 1700px;
+}
+
 body {
     background-color: grey;
 }
@@ -60,7 +68,6 @@ a {
 a:hover {
     color: yellow;
 }
-
 
 footer {
     text-align: center;
