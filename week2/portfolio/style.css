@@ -5,13 +5,13 @@
 }
 .container {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     text-align: center;
     color: white;
     font-size: 25px;
-    
+   
 }
-
 
 .center {
     display: block;
@@ -24,7 +24,6 @@
 .navbar {
     overflow: hidden;
     background-color: black;
-    font-family: Arial;
   }
   
   
@@ -36,7 +35,7 @@
   
   /* Dropdown button */
   .dropdown .dropbtn {
-    font-size: 16px;
+    font-size: 25px;
     border: none;
     outline: none;
     color: red;;
@@ -69,6 +68,7 @@
     text-decoration: none;
     display: block;
     text-align: left;
+    font-size: 25px;
   }
   
   /* Add a grey background color to dropdown links on hover */
@@ -93,20 +93,26 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 100%;
+    min-height: 100vh;
     
 }
 
 
 #fccProj img {
-    width: 400px;
+    width: 25%;
     margin-bottom: 10px;
     border-radius: 5px;
+    margin-left: 40px;
+    margin-right: 40px;
+
 }
 
 #fccProj a {
     background-color: black;
     border-radius: 10px;
+    width: 25%;
+    margin-left: 40px;
+    margin-right: 40px;
 }
 
 #ownProjects a {
