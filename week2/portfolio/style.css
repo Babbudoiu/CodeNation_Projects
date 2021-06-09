@@ -113,11 +113,26 @@ body {
     width: 25%;
     margin-left: 40px;
     margin-right: 40px;
+    border: solid;
+    border-color: #33A1FD;
 }
 
 #ownProjects a {
     background-color: black;
+    border: solid;
     border-radius: 10px;
+    border-color: #33A1FD;
+}
+
+#contacts ul {
+    list-style: none;
+}
+
+#contacts span {
+    background-color: black;
+    border: solid;
+    border-radius: 10px;
+    border-color: #33A1FD;
 }
 
 ul {
