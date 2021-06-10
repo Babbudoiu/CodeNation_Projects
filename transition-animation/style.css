@@ -1,0 +1,251 @@
+/* .square {
+    width: 300px;
+    height: 300px;
+    background-color: red;
+    transition: border-radius 2s;
+    /*transition-timing-function: ease;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+} */
+
+/* .square{
+    width: 300px;
+    height: 100px;
+    background-color: blue;
+    animation-name: button;
+    animation-duration: 4s;
+    }
+    .square:hover{
+    border-radius: 50%;
+    }
+
+    @keyframes button {
+        0% {
+            background-color: blueviolet;
+            box-shadow: 6px 6px 0 darkgrey;
+        }
+        50% {
+            background-color: aqua;
+            box-shadow: 6px 6px 0 darkslategray;
+        }
+        100% {
+            background-color: whitesmoke;
+            box-shadow: 6px 6px 0 black;
+        }
+     }
+         */
+    
+    .background {
+        background-image: url(sky.jpg);
+        min-width: 100vh;
+        min-height: 100vh;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100%;
+        margin: 0 auto;
+        padding: 0;
+        transition: 5s;
+
+        animation-name: animate;
+        animation-direction: alternate-reverse;
+        animation-duration: 30s;
+        animation-fill-mode: forwards;
+        animation-iteration-count: infinite;
+        animation-play-state: running;
+        animation-timing-function: ease-in-out;
+    }
+
+    @keyframes animate {
+        0% {
+            background-image: url(sky.jpg);
+        }
+        20% {
+            background-image: url(code1.jpg);
+        }
+        40% {
+            background-image: url(code2.jpg);
+        }
+        60% {
+            background-image: url(code3.jpg);
+        }
+        80% {
+            background-image: url(code4.jpg);
+        }
+        100% {
+            background-image: url(code5.jpg);
+        }
+        
+
+    }
+
+    body {
+        margin: 0;
+
+    }
+
+    .logo {
+        display: flex;
+        justify-content: center;
+        padding-top: 10%;
+        
+    } 
+
+    .logo:hover{
+        -webkit-animation: spin 5s infinite;
+         animation: spin 5s infinite;
+      }
+      
+      @-webkit-keyframes spin {
+        from {
+          -webkit-transform: rotateY(0deg);
+        }
+        to {
+          -webkit-transform: rotateY(-360deg);
+        }
+      }
+      
+      @keyframes spin {
+        from {
+          -moz-transform: rotateY(0deg);
+          -ms-transform: rotateY(0deg);
+          transform: rotateY(0deg);
+        }
+        
+        to {
+          -moz-transform: rotateY(-360deg);
+          -ms-transform: rotateY(-360deg);
+          transform: rotateY(-360deg);
+        }
+      }
+
+      
+
+    .website button {
+    position: absolute; /*if you don't specify absolute you cannot do top,left below (so you can force the element to where you want*/
+    top: 20%;
+    left: 49.5%;
+    transform: translate(-50%, -60%);
+    border-radius: 30%;
+    box-shadow: 3px 4px black;
+    width: 200px;
+    height: 200px;
+    font-size: 30px;
+    background-color: darkorange;
+    color: blue;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    }
+
+    .website button:hover {
+        background-color:  blue;
+        font-size: 40px;
+        color: darkorange;
+    }
+
+    .website a {
+        text-decoration: none;
+        color: blue;
+    }
+
+    .website a:hover {
+        color: darkorange;
+       text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+
+    }
+
+    .facebook button {
+    position: absolute;
+    top: 20%;
+    left: 60%;
+    transform: translate(20%, 80%);
+    border-radius: 50%;
+    box-shadow: 3px 4px black;
+    width: 200px;
+    height: 200px;
+    font-size: 30px;
+    background-color: yellow;
+    }
+
+    .facebook button:hover {
+        width: 400px;
+        transition: width 2s;
+    }
+
+    .facebook a {
+        text-decoration: none;
+        color: blue;
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+
+    }
+
+    .twitter button {
+    position: absolute; 
+    top: 19%;
+    left: 38%;
+    transform: translate(-90%, 80%);
+    border-radius: 2px;
+    box-shadow:inset 3px 4px darkorange;
+    width: 200px;
+    height: 200px;
+    font-size: 30px;
+    transition: ease-out 0.3s;
+    outline: none;
+    background-color: yellow;
+    }
+
+    .twitter button:hover {
+     box-shadow: inset 200px 0 0 0 darkorange;
+    }
+
+    .twitter a {
+        text-decoration: none;
+        color:blue;
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    }
+
+    .instagram button {
+     position: absolute; 
+    top: 10%;
+    left: 48%;
+    transform: translate(-30%, 250%);
+    border: 4px solid;
+    box-shadow: inset 0 0 0.5em 0 #255784, 0 0 0.5em 0 #255784;
+    width: 200px;
+    height: 200px;
+    font-size: 30px;
+    z-index: 1;
+    border-radius: 35px;
+    background-color: yellow;
+    
+    }
+
+    .instagram button:before{
+        transition: 0.5s all ease;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        right: 50%;
+        bottom: 0;
+        opacity: 0;
+        content: "";
+        background-color: darkorange;
+    }
+
+    .instagram button:hover:before {
+        transition: 0.5 all ease;
+        left: 0;
+        right: 0;
+        opacity: 1;
+        z-index: -1;
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+        
+    }
+
+  
+
+    .instagram a {
+        text-decoration: none;
+        color: blue;
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+       
+    }
+
+  
